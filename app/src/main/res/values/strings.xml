@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">RecyclerViewDivisas</string>
+
+    <string-array name="divisas">
+        <item>USD</item>
+        <item>AUD</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>LEK</item>
+        <item>AFN</item>
+        <item>BOB</item>
+        <item>BYN</item>
+        <item>BWP</item>
+    </string-array>
+
+    <string-array name="valor">
+        <item>1.09</item>
+        <item>1.66</item>
+        <item>0.86</item>
+        <item>160.98</item>
+        <item>103.71</item>
+        <item>79.24</item>
+        <item>7.51</item>
+        <item>3.56</item>
+        <item>14.85</item>
+    </string-array>
+</resources>
