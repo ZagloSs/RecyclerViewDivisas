@@ -41,7 +41,7 @@
         android:backgroundTint="@color/white"
         android:hint="Introduzca la cantidad"
         android:textColor="@color/white"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         android:textColorHint="@color/white"
 
         app:layout_constraintBottom_toTopOf="@+id/guideline3"

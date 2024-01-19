@@ -41,6 +41,8 @@ public class DvRvAdapter extends RecyclerView.Adapter<DvRvAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull DvRvAdapter.MyViewHolder holder, int position) {
         holder.tvNombre.setText(dvModels.get(position).getName());
+        holder.tvCambio.setText("1€ son " + String.valueOf(dvModels.get(position).getCantidad()) + dvModels.get(position).getMoneda());
+
         final int pos = position;
         holder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +77,7 @@ public class DvRvAdapter extends RecyclerView.Adapter<DvRvAdapter.MyViewHolder> 
 
         TextView tvNombre;
         CardView cv;
+        TextView tvCambio;
 
 
 
@@ -83,6 +86,7 @@ public class DvRvAdapter extends RecyclerView.Adapter<DvRvAdapter.MyViewHolder> 
             super(itemView);
             tvNombre = itemView.findViewById((R.id.divisa));
             cv = itemView.findViewById(R.id.cardDivisa);
+            tvCambio = itemView.findViewById(R.id.cambio);
         }
     }
 }
