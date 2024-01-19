@@ -6,11 +6,12 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardDivisa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        app:contentPadding="5dp"
-        android:backgroundTint="#4e4e4e"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp"
+        app:cardBackgroundColor="#3e3e3e"
         app:cardCornerRadius="5dp"
         app:cardElevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"

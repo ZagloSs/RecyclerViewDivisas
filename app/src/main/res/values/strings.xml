@@ -24,4 +24,16 @@
         <item>3.56</item>
         <item>14.85</item>
     </string-array>
+
+    <string-array name="moneda">
+        <item>$</item>
+        <item>A$</item>
+        <item>£</item>
+        <item>¥</item>
+        <item>Lek</item>
+        <item>؋</item>
+        <item>Bob</item>
+        <item>Byn</item>
+        <item>Bwp</item>
+    </string-array>
 </resources>
