@@ -1,9 +1,12 @@
 package com.zagloss.recyclerviewdivisas;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     View v;
 
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
     public void turnText(){
@@ -61,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             if(vip.isChecked()){
                 convers = adapter.divisaSelec.getCantidad() * dvsa;
             }else{
-                convers = adapter.divisaSelec.getCantidad() * dvsa * 1.2f;
+                convers = adapter.divisaSelec.getCantidad() * dvsa * 1.02f;
             }
             String conv = String.valueOf(convers);
             conversion.setText(conv + " " + adapter.divisaSelec.getMoneda());
